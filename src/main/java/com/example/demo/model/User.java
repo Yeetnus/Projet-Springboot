@@ -21,9 +21,6 @@ public class User {
 
     private String role;
 
-    @OneToMany(mappedBy = "user")
-    private Set<Liker> likes;
-
     // Constructeurs
     public User() {
     }

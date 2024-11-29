@@ -21,6 +21,8 @@ public class Article {
 
     private String auteur;
 
+    private String titre;
+
     private String contenu;
 
     @OneToMany(mappedBy = "article")
@@ -29,9 +31,10 @@ public class Article {
     public Article() {
     }
 
-    public Article(Date datePublication, String auteur, String contenu) {
+    public Article(Date datePublication, String auteur, String contenu, String titre) {
         this.datePublication = datePublication;
         this.auteur = auteur;
         this.contenu = contenu;
+        this.titre = titre;
     }
 }
