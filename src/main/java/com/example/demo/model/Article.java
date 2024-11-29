@@ -19,22 +19,22 @@ public class Article {
 
     private Date datePublication;
 
+    private Long idUser;
+
     private String auteur;
 
     private String titre;
 
     private String contenu;
 
-    @OneToMany(mappedBy = "article")
-    private Set<Liker> likes;
-
     public Article() {
     }
 
-    public Article(Date datePublication, String auteur, String contenu, String titre) {
+    public Article(Date datePublication, String auteur, String contenu, String titre, Long idUser) {
         this.datePublication = datePublication;
         this.auteur = auteur;
         this.contenu = contenu;
         this.titre = titre;
+        this.idUser = idUser;
     }
 }
