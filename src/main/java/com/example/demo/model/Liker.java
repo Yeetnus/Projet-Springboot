@@ -23,4 +23,8 @@ public class Liker {
     private Article article;
 
     private boolean isLiked;  // true pour un like, false pour un dislike
+
+    public Liker() {
+    }
+
 }
